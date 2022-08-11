@@ -49,6 +49,11 @@ header {
     row-gap: 20px;
     text-align: center;
     padding:100px 0;
+      background-image: url("../img/bg-section-top-mobile-1.svg");
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+      
 }
 header h1 {
     color: var(--veryDarkCyan)
@@ -93,12 +98,40 @@ header p {
     font-weight: 700;
     font-size: 50px;
 }
+.grow--together {
+    display: flex;
+    flex-direction: column;
+    padding:0 20px;
+    background-color: var(--veryPaleBlue);
+}
+.grow--img {
+    width:100%;
+}
+.grow--img img {
+    width:100%;
+}
+.grow--content {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding:40px 0;
+
+}
 @media screen and (min-width:640px) {
     nav{
         padding:30px 50px;
     }
     .nav__logo img{
         width:100%;
+    }
+    header {
+        background-image: url("../img/bg-section-top-desktop-1.svg");
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 10rem;
     }
     header p {
         padding:0 100px;
@@ -107,6 +140,19 @@ header p {
         flex-direction: row;
         column-gap: 350px;
         text-align: center;
+    }
+    .grow--together {
+        flex-direction:row-reverse;
+        background-color: var(--veryPaleBlue);
+    }
+    .grow--content {
+        text-align: start;
+       align-items: start;
+       justify-content: center;
+       padding:0 105px ;
+       line-height: 1.5;
+      row-gap: 20px;
+      color: var(--veryDarkCyan);
     }
    
 }
@@ -117,6 +163,7 @@ header p {
     .header__img {
         padding:50px 300px
     }
+
 }
 .attribution {
     font-size: 10px;
